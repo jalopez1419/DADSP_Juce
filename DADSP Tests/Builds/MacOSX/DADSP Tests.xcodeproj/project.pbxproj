@@ -69,6 +69,10 @@
 			isa = PBXBuildFile;
 			fileRef = 112CF509258FD0416B53C091;
 		};
+		027A2E328E6F8A1B0B182938 = {
+			isa = PBXBuildFile;
+			fileRef = 502E6A8EEB47BA96DF690E59;
+		};
 		FDF4E159D72D70BB14D72E79 = {
 			isa = PBXBuildFile;
 			fileRef = 6A01EC5D8A8ED693398924C7;
@@ -268,6 +272,13 @@
 			name = "juce_core";
 			path = "/Applications/JUCE/modules/juce_core";
 			sourceTree = "<absolute>";
+		};
+		502E6A8EEB47BA96DF690E59 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "DADSP_DFT.cpp";
+			path = "../../Source/DADSP_DFT.cpp";
+			sourceTree = "SOURCE_ROOT";
 		};
 		525F6868D607BCC5869ADBDC = {
 			isa = PBXFileReference;
@@ -507,6 +518,13 @@
 			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		C7CF96004684DEFD8484F8EE = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = CommonImpluseResp.h;
+			path = ../../Source/CommonImpluseResp.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		C91EB8663BDA01AD982137E4 = {
 			isa = PBXFileReference;
 			lastKnownFileType = file;
@@ -556,6 +574,13 @@
 			path = "DADSP Tests.entitlements";
 			sourceTree = "SOURCE_ROOT";
 		};
+		F828C385AEF47228277366B9 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = "DADSP_DFT.h";
+			path = "../../Source/DADSP_DFT.h";
+			sourceTree = "SOURCE_ROOT";
+		};
 		F91D6C13BC9DFF8CA1321282 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
@@ -577,9 +602,19 @@
 			path = ../../JuceLibraryCode/AppConfig.h;
 			sourceTree = "SOURCE_ROOT";
 		};
+		54F939A19100A11F88EF174D = {
+			isa = PBXGroup;
+			children = (
+				C7CF96004684DEFD8484F8EE,
+			);
+			name = "helpers_defines";
+			sourceTree = "<group>";
+		};
 		D7CAF720080C11B30ED689D3 = {
 			isa = PBXGroup;
 			children = (
+				502E6A8EEB47BA96DF690E59,
+				F828C385AEF47228277366B9,
 				6A01EC5D8A8ED693398924C7,
 				E806476948EC392162C508A7,
 				525F6868D607BCC5869ADBDC,
@@ -602,6 +637,7 @@
 		11293051A06A684FE1830532 = {
 			isa = PBXGroup;
 			children = (
+				54F939A19100A11F88EF174D,
 				D7CAF720080C11B30ED689D3,
 				AE28C28CD649A1AD8CC94409,
 			);
@@ -1125,6 +1161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027A2E328E6F8A1B0B182938,
 				FDF4E159D72D70BB14D72E79,
 				C14741195DAE853ED4B97B07,
 				5F0B916AEF446B8DF55F0D31,

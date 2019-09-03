@@ -3,7 +3,13 @@
 <JUCERPROJECT id="xmUfU6" name="DADSP Tests" projectType="audioplug" jucerVersion="5.4.4"
               pluginFormats="buildAU">
   <MAINGROUP id="jvluKA" name="DADSP Tests">
+    <GROUP id="{D7896507-4120-01BE-4358-2EB1F6471F75}" name="helpers_defines">
+      <FILE id="FcPsuu" name="CommonImpluseResp.h" compile="0" resource="0"
+            file="Source/CommonImpluseResp.h"/>
+    </GROUP>
     <GROUP id="{AD625F84-D3B6-1DCC-86D1-D6970838B0B9}" name="DADSP">
+      <FILE id="gQMPr7" name="DADSP_DFT.cpp" compile="1" resource="0" file="Source/DADSP_DFT.cpp"/>
+      <FILE id="gZCWIy" name="DADSP_DFT.h" compile="0" resource="0" file="Source/DADSP_DFT.h"/>
       <FILE id="N96trC" name="DADSPConvolution.cpp" compile="1" resource="0"
             file="Source/DADSPConvolution.cpp"/>
       <FILE id="BeNFlD" name="DADSPConvolution.h" compile="0" resource="0"
