@@ -29,10 +29,18 @@ DADSP_DFT::~DADSP_DFT()
 
 void DADSP_DFT::process(float *inBuffer, float *outBuffer, double *REX, double *IMX, int windowSize)
 {
+    for(int k=0; k <= N/2; k++)
+    {
+        REX[k] = REX[k]/(N/2);
+        IMX[k] = -IMX[k]/(N/2);
+    }
+    REX[0] = REX[0]/2;
+    REX[N/2] = REX[N/2]/2;
     for(int i = 0; i < N; i++)
     {
         for(int k = 0; k < (N/2 + 1); k++)
         {
+            
             outBuffer[i] = REX[k] * cos((2*M_PI*i*k)/N);
             outBuffer[i] = IMX[k] * sin((2*M_PI*i*k)/N);
         }
