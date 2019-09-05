@@ -27,8 +27,9 @@ public:
     DADSP_DFT(int N);
     ~DADSP_DFT();
     
-    void process(float* inBuffer, float* outBuffer, double* REX, double* IMX, int windowSize);
+    void synth_process(float* inBuffer, float* outBuffer, double* REX, double* IMX, int windowSize);
     
+    void an_process(float*inBuffer, double* REX, double* IMX, int windowSize);
     
 private:
     double mSynthesized[DEFAULT_WINDOW_SIZE] = {0};

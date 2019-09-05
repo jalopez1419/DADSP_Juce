@@ -27,7 +27,7 @@ DADSP_DFT::~DADSP_DFT()
 }
 
 
-void DADSP_DFT::process(float *inBuffer, float *outBuffer, double *REX, double *IMX, int windowSize)
+void DADSP_DFT::synth_process(float *inBuffer, float *outBuffer, double *REX, double *IMX, int windowSize)
 {
     for(int k=0; k <= N/2; k++)
     {
@@ -43,6 +43,18 @@ void DADSP_DFT::process(float *inBuffer, float *outBuffer, double *REX, double *
             
             outBuffer[i] = REX[k] * cos((2*M_PI*i*k)/N);
             outBuffer[i] = IMX[k] * sin((2*M_PI*i*k)/N);
+        }
+    }
+}
+
+void DADSP_DFT::an_process(float *inBuffer, double *REX, double *IMX, int windowSize)
+{
+    for(int k=0; k <= N/2; k++)
+    {
+        for(int i = 0; i < N; i++)
+        {
+            REX[k] = REX[k] + inBuffer[i] * cos((2 * M_PI * k * i)/N);
+            IMX[k] = IMX[k] - inBuffer[i] * sin((2 * M_PI * k * i)/N);
         }
     }
 }
