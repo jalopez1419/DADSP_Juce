@@ -6,6 +6,10 @@
     <GROUP id="{D7896507-4120-01BE-4358-2EB1F6471F75}" name="helpers_defines">
       <FILE id="FcPsuu" name="CommonImpluseResp.h" compile="0" resource="0"
             file="Source/CommonImpluseResp.h"/>
+      <FILE id="NWoS6y" name="Rect_Pol_Convert.cpp" compile="1" resource="0"
+            file="Source/Rect_Pol_Convert.cpp"/>
+      <FILE id="jjSrrC" name="Rect_Pol_Convert.h" compile="0" resource="0"
+            file="Source/Rect_Pol_Convert.h"/>
     </GROUP>
     <GROUP id="{AD625F84-D3B6-1DCC-86D1-D6970838B0B9}" name="DADSP">
       <FILE id="gQMPr7" name="DADSP_DFT.cpp" compile="1" resource="0" file="Source/DADSP_DFT.cpp"/>

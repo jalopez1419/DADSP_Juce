@@ -69,6 +69,10 @@
 			isa = PBXBuildFile;
 			fileRef = 112CF509258FD0416B53C091;
 		};
+		994090271D9EA590561070F4 = {
+			isa = PBXBuildFile;
+			fileRef = E2938BC43E195DADF1D7E342;
+		};
 		027A2E328E6F8A1B0B182938 = {
 			isa = PBXBuildFile;
 			fileRef = 502E6A8EEB47BA96DF690E59;
@@ -371,6 +375,13 @@
 			path = "../../JuceLibraryCode/include_juce_audio_basics.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		82ADE549BEBB8D227F51087E = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = "Rect_Pol_Convert.h";
+			path = "../../Source/Rect_Pol_Convert.h";
+			sourceTree = "SOURCE_ROOT";
+		};
 		82C1BC3CE02A5D43FBD944E7 = {
 			isa = PBXFileReference;
 			lastKnownFileType = file;
@@ -546,6 +557,13 @@
 			path = "../../JuceLibraryCode/include_juce_graphics.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		E2938BC43E195DADF1D7E342 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "Rect_Pol_Convert.cpp";
+			path = "../../Source/Rect_Pol_Convert.cpp";
+			sourceTree = "SOURCE_ROOT";
+		};
 		E806476948EC392162C508A7 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.c.h;
@@ -606,6 +624,8 @@
 			isa = PBXGroup;
 			children = (
 				C7CF96004684DEFD8484F8EE,
+				E2938BC43E195DADF1D7E342,
+				82ADE549BEBB8D227F51087E,
 			);
 			name = "helpers_defines";
 			sourceTree = "<group>";
@@ -1161,6 +1181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				994090271D9EA590561070F4,
 				027A2E328E6F8A1B0B182938,
 				FDF4E159D72D70BB14D72E79,
 				C14741195DAE853ED4B97B07,
