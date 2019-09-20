@@ -13,6 +13,7 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "DADSPConvolutionHelpers.h"
 #include "DADSPConvolution.h"
+#include "DADSP_FIRFilters.h"
 #include "memory"
 
 //==============================================================================
@@ -68,6 +69,8 @@ private:
     std::unique_ptr<IirLowpass> mLowPass[2];
     
     std::unique_ptr<inputSideConv> mIconv[2];
+    
+    std::unique_ptr<DADSP_movingAverageFIR> mMovingAverage[2];
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DadspTestsAudioProcessor)
 };

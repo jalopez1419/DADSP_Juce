@@ -33,6 +33,8 @@ DadspTestsAudioProcessor::DadspTestsAudioProcessor()
     mIconv[1] = std::make_unique<inputSideConv>();
     impulse[0] = 0.7;
     impulse[19] = 0.3;
+    mMovingAverage[0] = std::make_unique<DADSP_movingAverageFIR>(10);
+    mMovingAverage[1] = std::make_unique<DADSP_movingAverageFIR>(10);
 }
 
 DadspTestsAudioProcessor::~DadspTestsAudioProcessor()
@@ -106,6 +108,9 @@ void DadspTestsAudioProcessor::prepareToPlay (double sampleRate, int samplesPerB
 {
     // Use this method as the place to do any pre-playback
     // initialisation that you need..
+    
+    mMovingAverage[0]->reset();
+    mMovingAverage[1]->reset();
 }
 
 void DadspTestsAudioProcessor::releaseResources()
@@ -167,7 +172,9 @@ void DadspTestsAudioProcessor::processBlock (AudioBuffer<float>& buffer, MidiBuf
         
         //mLowPass[channel]->process(channelData, channelData, buffer.getNumSamples(), cutoff);
         
-        mIconv[channel]->process(buffer.getWritePointer(channel), buffer.getWritePointer(channel), buffer.getNumSamples(), impulse, 20);
+       // mIconv[channel]->process(buffer.getWritePointer(channel), buffer.getWritePointer(channel), buffer.getNumSamples(), impulse, 20);
+        
+       // mMovingAverage[channel]->process(buffer.getWritePointer(channel), buffer.getWritePointer(channel), buffer.getNumSamples(), 10);
         // ..do something to the data...
     }
 }

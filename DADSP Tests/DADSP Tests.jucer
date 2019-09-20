@@ -14,6 +14,10 @@
     <GROUP id="{AD625F84-D3B6-1DCC-86D1-D6970838B0B9}" name="DADSP">
       <FILE id="gQMPr7" name="DADSP_DFT.cpp" compile="1" resource="0" file="Source/DADSP_DFT.cpp"/>
       <FILE id="gZCWIy" name="DADSP_DFT.h" compile="0" resource="0" file="Source/DADSP_DFT.h"/>
+      <FILE id="VjrR2e" name="DADSP_FIRFilters.cpp" compile="1" resource="0"
+            file="Source/DADSP_FIRFilters.cpp"/>
+      <FILE id="yFMRZM" name="DADSP_FIRFilters.h" compile="0" resource="0"
+            file="Source/DADSP_FIRFilters.h"/>
       <FILE id="N96trC" name="DADSPConvolution.cpp" compile="1" resource="0"
             file="Source/DADSPConvolution.cpp"/>
       <FILE id="BeNFlD" name="DADSPConvolution.h" compile="0" resource="0"

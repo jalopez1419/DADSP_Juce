@@ -77,6 +77,10 @@
 			isa = PBXBuildFile;
 			fileRef = 502E6A8EEB47BA96DF690E59;
 		};
+		0325BB0A1BFACB7E39AFC621 = {
+			isa = PBXBuildFile;
+			fileRef = 2D10F451E5D4EF2656B89859;
+		};
 		FDF4E159D72D70BB14D72E79 = {
 			isa = PBXBuildFile;
 			fileRef = 6A01EC5D8A8ED693398924C7;
@@ -242,6 +246,13 @@
 			path = "/Applications/JUCE/modules/juce_audio_utils";
 			sourceTree = "<absolute>";
 		};
+		2D10F451E5D4EF2656B89859 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "DADSP_FIRFilters.cpp";
+			path = "../../Source/DADSP_FIRFilters.cpp";
+			sourceTree = "SOURCE_ROOT";
+		};
 		31CC40F42D807D32F20DC6CD = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -395,6 +406,13 @@
 			name = AudioToolbox.framework;
 			path = System/Library/Frameworks/AudioToolbox.framework;
 			sourceTree = SDKROOT;
+		};
+		8A607E2DA9E35558DD656C44 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = "DADSP_FIRFilters.h";
+			path = "../../Source/DADSP_FIRFilters.h";
+			sourceTree = "SOURCE_ROOT";
 		};
 		8B7D06D2DB268A74498CB2B1 = {
 			isa = PBXFileReference;
@@ -635,6 +653,8 @@
 			children = (
 				502E6A8EEB47BA96DF690E59,
 				F828C385AEF47228277366B9,
+				2D10F451E5D4EF2656B89859,
+				8A607E2DA9E35558DD656C44,
 				6A01EC5D8A8ED693398924C7,
 				E806476948EC392162C508A7,
 				525F6868D607BCC5869ADBDC,
@@ -1183,6 +1203,7 @@
 			files = (
 				994090271D9EA590561070F4,
 				027A2E328E6F8A1B0B182938,
+				0325BB0A1BFACB7E39AFC621,
 				FDF4E159D72D70BB14D72E79,
 				C14741195DAE853ED4B97B07,
 				5F0B916AEF446B8DF55F0D31,
